@@ -1,3 +1,7 @@
 [submodule "StratisBitcoinFullNode"]
 	path = StratisBitcoinFullNode
 	url = https://github.com/stratisproject/StratisBitcoinFullNode/
+
+[submodule "Signet.FullNode"]
+	path = Signet.FullNode
+	url = https://github.com/SignetPlatform/Signet.FullNode/

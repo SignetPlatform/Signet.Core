@@ -295,6 +295,17 @@ project.lock.json
 /StratisCore.UI/dist
 /StratisCore.UI/main.js
 /StratisCore.UI/main.js.map
+
+/Signet.Core/.vscode
+/Signet.Core.UI/daemon
+/Signet.Core.UI/app-builds
+/Signet.Core.UI/dist
+/Signet.Core.UI/main.js
+/Signet.Core.UI/main.js.map
+
+
+
 .vscode/
 
 StratisCore.UI/.idea/.idea.StratisCore.UI.dir/.idea/
+Signet.Core.UI/.idea/.idea.Signet.Core.UI.dir/.idea/

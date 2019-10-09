@@ -38,9 +38,9 @@ const applicationName = sidechain ? 'Synuit Core' : 'Signet Core';
 // Set default API port according to network
 let apiPortDefault;
 if (testnet && !sidechain) {
-  apiPortDefault = 38221;
+  apiPortDefault = 24343;
 } else if (!testnet && !sidechain) {
-  apiPortDefault = 37221;
+  apiPortDefault = 4343;
 } else if (sidechain && testnet) {
   apiPortDefault = 38223;
 } else if (sidechain && !testnet) {

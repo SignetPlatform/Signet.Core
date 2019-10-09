@@ -2,30 +2,30 @@
   <nav class="navbar navbar-light bg-light justify-content-between">
     <ul class="nav list-inline col-5">
       <li class="nav-item list-inline-item">
-        <a class="nav-link" [class.nav-link-stratis-green]="sidechainEnabled" routerLink="dashboard"
-          routerLinkActive="sidechainEnabled ? active-stratis-green : active">Dashboard</a>
+        <a class="nav-link" [class.nav-link-signet-green]="sidechainEnabled" routerLink="dashboard"
+          routerLinkActive="sidechainEnabled ? active-signet-green : active">Dashboard</a>
       </li>
       <li class="nav-item list-inline-item">
-        <a class="nav-link" [class.nav-link-stratis-green]="sidechainEnabled" routerLink="history"
-          routerLinkActive="sidechainEnabled ? active-stratis-green : active">History</a>
+        <a class="nav-link" [class.nav-link-signet-green]="sidechainEnabled" routerLink="history"
+          routerLinkActive="sidechainEnabled ? active-signet-green : active">History</a>
       </li>
       <!-- <li *ngIf="testnet && !sidechainEnabled" class="nav-item list-inline-item">
           <a class="nav-link" routerLink="staking" routerLinkActive="active">Cold Staking</a>
         </li> -->
       <li *ngIf="sidechainEnabled" class="nav-item list-inline-item">
-        <a class="nav-link" [class.nav-link-stratis-green]="sidechainEnabled" routerLink="smart-contracts"
-          routerLinkActive="sidechainEnabled ? active-stratis-green : active">Smart Contracts</a>
+        <a class="nav-link" [class.nav-link-signet-green]="sidechainEnabled" routerLink="smart-contracts"
+          routerLinkActive="sidechainEnabled ? active-signet-green : active">Smart Contracts</a>
       </li>
       <li *ngIf="sidechainEnabled" class="nav-item list-inline-item">
-        <a class="nav-link" [class.nav-link-stratis-green]="sidechainEnabled" routerLink="tokens"
-          routerLinkActive="sidechainEnabled ? active-stratis-green : active">Token Management</a>
+        <a class="nav-link" [class.nav-link-signet-green]="sidechainEnabled" routerLink="tokens"
+          routerLinkActive="sidechainEnabled ? active-signet-green : active">Token Management</a>
       </li>
     </ul>
 
     <span class="navbar-brand mx-auto">
       <a>
-        <img *ngIf="!sidechainEnabled" src="./assets/images/stratis/logo.svg" width="36" height="36" alt="Signet">
-        <img *ngIf="sidechainEnabled" src="./assets/images/cirrus/logo.svg" width="36" height="36" alt="Cirrus">
+        <img *ngIf="!sidechainEnabled" src="./assets/images/signet/logo.svg" width="36" height="36" alt="Signet">
+        <img *ngIf="sidechainEnabled" src="./assets/images/synuit/logo.svg" width="36" height="36" alt="Synuit">
       </a>
     </span>
 

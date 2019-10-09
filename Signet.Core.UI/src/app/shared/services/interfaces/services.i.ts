@@ -45,17 +45,17 @@ export interface IApiService {
   /**
    * Create a new Signet wallet.
    */
-  createStratisWallet(data: WalletCreation): Observable<any>;
+  createSignetWallet(data: WalletCreation): Observable<any>;
 
   /**
    * Recover a Signet wallet.
    */
-  recoverStratisWallet(data: WalletRecovery): Observable<any>;
+  recoverSignetWallet(data: WalletRecovery): Observable<any>;
 
   /**
    * Load a Signet wallet
    */
-  loadStratisWallet(data: WalletLoad): Observable<any>;
+  loadSignetWallet(data: WalletLoad): Observable<any>;
 
   /**
    * Get wallet status info from the API.

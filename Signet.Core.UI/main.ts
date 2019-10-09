@@ -9,7 +9,7 @@ if (os.arch() === 'arm') {
 
 // Set to true if you want to build Core for sidechains
 const buildForSidechain = false;
-const daemonName = buildForSidechain ? 'Signet.CirrusD' : 'Signet.SignetD';
+const daemonName = buildForSidechain ? 'Signet.SynuitD' : 'Signet.SignetD';
 
 let serve;
 let testnet;
@@ -33,7 +33,7 @@ if (buildForSidechain) {
   sidechain = true;
 }
 
-const applicationName = sidechain ? 'Cirrus Core' : 'Signet Core';
+const applicationName = sidechain ? 'Synuit Core' : 'Signet Core';
 
 // Set default API port according to network
 let apiPortDefault;
@@ -244,7 +244,7 @@ function createTray() {
   // Put the app in system tray
   let iconPath = 'Signet/icon-16.png';
   if (sidechain) {
-    iconPath = 'cirrus/icon-16.png';
+    iconPath = 'synuit/icon-16.png';
   }
   let trayIcon;
   if (serve) {

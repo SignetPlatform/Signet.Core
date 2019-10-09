@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from "rxjs";
 
 /*
- * Used to maintain the state of the currently selected address in CirrusCore.
+ * Used to maintain the state of the currently selected address in SynuitCore.
  */
 @Injectable({
   providedIn: 'root'

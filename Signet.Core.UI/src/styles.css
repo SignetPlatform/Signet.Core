@@ -1625,18 +1625,18 @@ pre code {
   background-color: #c8b7e8;
 }
 
-.table-stratis-green,
-.table-stratis-green > th,
-.table-stratis-green > td {
+.table-signet-green,
+.table-signet-green > th,
+.table-signet-green > td {
   background-color: #c8e9ec;
 }
 
-.table-hover .table-stratis-green:hover {
+.table-hover .table-signet-green:hover {
   background-color: #b5e1e5;
 }
 
-.table-hover .table-stratis-green:hover > td,
-.table-hover .table-stratis-green:hover > th {
+.table-hover .table-signet-green:hover > td,
+.table-hover .table-signet-green:hover > th {
   background-color: #b5e1e5;
 }
 
@@ -2527,29 +2527,29 @@ fieldset[disabled] a.btn {
   box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.5);
 }
 
-.btn-stratis-green {
+.btn-signet-green {
   color: #fff;
   background-color: #3BB0BA;
   border-color: #3BB0BA;
 }
 
-.btn-stratis-green:hover {
+.btn-signet-green:hover {
   color: #fff;
   background-color: #32959d;
   border-color: #2f8b93;
 }
 
-.btn-stratis-green:focus, .btn-stratis-green.focus {
+.btn-signet-green:focus, .btn-signet-green.focus {
   box-shadow: 0 0 0 0.2rem rgba(59, 176, 186, 0.5);
 }
 
-.btn-stratis-green.disabled, .btn-stratis-green:disabled {
+.btn-signet-green.disabled, .btn-signet-green:disabled {
   background-color: #3BB0BA;
   border-color: #3BB0BA;
 }
 
-.btn-stratis-green:not([disabled]):not(.disabled):active, .btn-stratis-green:not([disabled]):not(.disabled).active,
-.show > .btn-stratis-green.dropdown-toggle {
+.btn-signet-green:not([disabled]):not(.disabled):active, .btn-signet-green:not([disabled]):not(.disabled).active,
+.show > .btn-signet-green.dropdown-toggle {
   color: #fff;
   background-color: #2f8b93;
   border-color: #2c828a;
@@ -2916,30 +2916,30 @@ fieldset[disabled] a.btn {
   box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.5);
 }
 
-.btn-outline-stratis-green {
+.btn-outline-signet-green {
   color: #3BB0BA;
   background-color: transparent;
   background-image: none;
   border-color: #3BB0BA;
 }
 
-.btn-outline-stratis-green:hover {
+.btn-outline-signet-green:hover {
   color: #fff;
   background-color: #3BB0BA;
   border-color: #3BB0BA;
 }
 
-.btn-outline-stratis-green:focus, .btn-outline-stratis-green.focus {
+.btn-outline-signet-green:focus, .btn-outline-signet-green.focus {
   box-shadow: 0 0 0 0.2rem rgba(59, 176, 186, 0.5);
 }
 
-.btn-outline-stratis-green.disabled, .btn-outline-stratis-green:disabled {
+.btn-outline-signet-green.disabled, .btn-outline-signet-green:disabled {
   color: #3BB0BA;
   background-color: transparent;
 }
 
-.btn-outline-stratis-green:not([disabled]):not(.disabled):active, .btn-outline-stratis-green:not([disabled]):not(.disabled).active,
-.show > .btn-outline-stratis-green.dropdown-toggle {
+.btn-outline-signet-green:not([disabled]):not(.disabled):active, .btn-outline-signet-green:not([disabled]):not(.disabled).active,
+.show > .btn-outline-signet-green.dropdown-toggle {
   color: #fff;
   background-color: #3BB0BA;
   border-color: #3BB0BA;
@@ -4643,12 +4643,12 @@ tbody.collapse.show {
   background-color: #59339d;
 }
 
-.badge-stratis-green {
+.badge-signet-green {
   color: #fff;
   background-color: #3BB0BA;
 }
 
-.badge-stratis-green[href]:focus, .badge-stratis-green[href]:hover {
+.badge-signet-green[href]:focus, .badge-signet-green[href]:hover {
   color: #fff;
   text-decoration: none;
   background-color: #2f8b93;
@@ -4859,17 +4859,17 @@ tbody.collapse.show {
   color: #24153e;
 }
 
-.alert-stratis-green {
+.alert-signet-green {
   color: #1f5c61;
   background-color: #d8eff1;
   border-color: #c8e9ec;
 }
 
-.alert-stratis-green hr {
+.alert-signet-green hr {
   border-top-color: #b5e1e5;
 }
 
-.alert-stratis-green .alert-link {
+.alert-signet-green .alert-link {
   color: #13373a;
 }
 
@@ -5279,25 +5279,25 @@ button.list-group-item-purple.active {
   border-color: #3a2264;
 }
 
-.list-group-item-stratis-green {
+.list-group-item-signet-green {
   color: #1f5c61;
   background-color: #c8e9ec;
 }
 
-a.list-group-item-stratis-green,
-button.list-group-item-stratis-green {
+a.list-group-item-signet-green,
+button.list-group-item-signet-green {
   color: #1f5c61;
 }
 
-a.list-group-item-stratis-green:focus, a.list-group-item-stratis-green:hover,
-button.list-group-item-stratis-green:focus,
-button.list-group-item-stratis-green:hover {
+a.list-group-item-signet-green:focus, a.list-group-item-signet-green:hover,
+button.list-group-item-signet-green:focus,
+button.list-group-item-signet-green:hover {
   color: #1f5c61;
   background-color: #b5e1e5;
 }
 
-a.list-group-item-stratis-green.active,
-button.list-group-item-stratis-green.active {
+a.list-group-item-signet-green.active,
+button.list-group-item-signet-green.active {
   color: #fff;
   background-color: #1f5c61;
   border-color: #1f5c61;
@@ -6061,11 +6061,11 @@ a.bg-purple:focus, a.bg-purple:hover {
   background-color: #59339d !important;
 }
 
-.bg-stratis-green {
+.bg-signet-green {
   background-color: #3BB0BA !important;
 }
 
-a.bg-stratis-green:focus, a.bg-stratis-green:hover {
+a.bg-signet-green:focus, a.bg-signet-green:hover {
   background-color: #2f8b93 !important;
 }
 
@@ -6149,7 +6149,7 @@ a.bg-stratis-green:focus, a.bg-stratis-green:hover {
   border-color: #6f42c1 !important;
 }
 
-.border-stratis-green {
+.border-signet-green {
   border-color: #3BB0BA !important;
 }
 
@@ -8586,11 +8586,11 @@ a.text-purple:focus, a.text-purple:hover {
   color: #59339d !important;
 }
 
-.text-stratis-green {
+.text-signet-green {
   color: #3BB0BA !important;
 }
 
-a.text-stratis-green:focus, a.text-stratis-green:hover {
+a.text-signet-green:focus, a.text-signet-green:hover {
   color: #2f8b93 !important;
 }
 
@@ -8714,11 +8714,11 @@ img {
   left: auto !important;
 }
 
-#GUI .nav-link-stratis-green.active-stratis-green {
+#GUI .nav-link-signet-green.active-signet-green {
   color: #3BB0BA !important;
 }
 
-#GUI .nav-link-stratis-green:hover {
+#GUI .nav-link-signet-green:hover {
   color: #3BB0BA;
 }
 
@@ -9213,7 +9213,7 @@ img {
   border-bottom: 1px dotted #ccc;
 }
 
-.stratis-green-shadow .modal-content {
+.signet-green-shadow .modal-content {
   border: 1px solid #3BB0BA !important;
   box-shadow: 0 5px 20px 0 rgba(59, 176, 186, 0.4) !important;
 }
@@ -9423,12 +9423,12 @@ img {
   color: #fff !important;
 }
 
-.ModalSend #stratis-green-bg.nav-link {
+.ModalSend #signet-green-bg.nav-link {
   background-color: #fff !important;
   color: #158BCF !important;
 }
 
-.ModalSend #stratis-green-bg.nav-link.active {
+.ModalSend #signet-green-bg.nav-link.active {
   background-color: #3BB0BA !important;
   color: #fff !important;
 }

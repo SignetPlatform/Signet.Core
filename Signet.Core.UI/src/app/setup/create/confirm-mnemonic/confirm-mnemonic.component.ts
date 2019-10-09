@@ -161,7 +161,7 @@ export class ConfirmMnemonicComponent implements OnInit, OnDestroy {
   }
 
   private createWallet(wallet: WalletCreation) {
-    this.apiService.createStratisWallet(wallet)
+    this.apiService.createSignetWallet(wallet)
       .subscribe(
         response => {
           this.genericModalService.openModal(

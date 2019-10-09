@@ -18,7 +18,7 @@ branches:
 #---------------------------------#
 
 image: Visual Studio 2017
-clone_folder: c:\projects\stratiscoreui
+clone_folder: c:\projects\signetcoreui
 configuration:
   - Release
 
@@ -36,7 +36,7 @@ environment:
 
 # build cache to preserve files/folders between builds
 cache:
-  - '%APPVEYOR_BUILD_FOLDER%\StratisCore.UI\node_modules'
+  - '%APPVEYOR_BUILD_FOLDER%\SignetCore.UI\node_modules'
   - '%USERPROFILE%\.nuget\packages'
   
 init:
@@ -58,7 +58,7 @@ install:
       npm config set unsafe-perm=true
       
       Write-Host "--> npm install" -foregroundcolor "magenta"
-      cd $env:APPVEYOR_BUILD_FOLDER/StratisCore.UI
+      cd $env:APPVEYOR_BUILD_FOLDER/SignetCore.UI
       npm install
       
       Write-Host "$env:log_prefix FINISHED restoring dotnet and npm packages" -foregroundcolor "magenta"
@@ -86,15 +86,15 @@ before_build:
 build_script:
 - ps: |
       Write-Host "$env:log_prefix running 'dotnet publish'" -foregroundcolor "magenta"
-      cd $env:APPVEYOR_BUILD_FOLDER/StratisBitcoinFullNode/src/Stratis.StratisD
-      dotnet publish -c $env:configuration -v m -r $env:win_runtime -o $env:APPVEYOR_BUILD_FOLDER\StratisCore.UI\daemon
+      cd $env:APPVEYOR_BUILD_FOLDER/SignetBitcoinFullNode/src/Signet.SignetD
+      dotnet publish -c $env:configuration -v m -r $env:win_runtime -o $env:APPVEYOR_BUILD_FOLDER\SignetCore.UI\daemon
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
       
-      Write-Host "$env:log_prefix Building and packaging the StratisCore.UI" -foregroundcolor "magenta"
-      cd $env:APPVEYOR_BUILD_FOLDER/StratisCore.UI
+      Write-Host "$env:log_prefix Building and packaging the SignetCore.UI" -foregroundcolor "magenta"
+      cd $env:APPVEYOR_BUILD_FOLDER/SignetCore.UI
       npm run package:windows --$env:arch
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }     
-      Write-Host "[$env:configuration][$env:win_runtime] Finished StratisCore.UI packaging" -foregroundcolor "magenta"
+      Write-Host "[$env:configuration][$env:win_runtime] Finished SignetCore.UI packaging" -foregroundcolor "magenta"
       
       dir
       cd app-builds
@@ -114,8 +114,8 @@ test_script:
 
 # pushing all files in build directory recursively
 artifacts:
-- path: StratisCore.UI\app-builds\*.exe
-  name: StratisCore.UI app
+- path: SignetCore.UI\app-builds\*.exe
+  name: SignetCore.UI app
   
 #----------------------------------#
 #      deployment configuration    #

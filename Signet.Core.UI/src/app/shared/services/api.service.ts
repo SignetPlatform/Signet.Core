@@ -93,7 +93,7 @@ export class ApiService extends RestApi implements IApiService {
   /**
    * Create a new Signet wallet.
    */
-  public createStratisWallet(data: WalletCreation): Observable<any> {
+  public createSignetWallet(data: WalletCreation): Observable<any> {
     return this.post('wallet/create/', data).pipe(
       catchError(err => this.handleHttpError(err))
     );
@@ -102,7 +102,7 @@ export class ApiService extends RestApi implements IApiService {
   /**
    * Recover a Signet wallet.
    */
-  public recoverStratisWallet(data: WalletRecovery): Observable<any> {
+  public recoverSignetWallet(data: WalletRecovery): Observable<any> {
     return this.post('wallet/recover/', data).pipe(
       catchError(err => this.handleHttpError(err))
     );
@@ -111,7 +111,7 @@ export class ApiService extends RestApi implements IApiService {
   /**
    * Load a Signet wallet
    */
-  public loadStratisWallet(data: WalletLoad): Observable<any> {
+  public loadSignetWallet(data: WalletLoad): Observable<any> {
     return this.post('wallet/load/', data).pipe(
       catchError(err => this.handleHttpError(err))
     );

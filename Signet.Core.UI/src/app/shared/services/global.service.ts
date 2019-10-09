@@ -18,8 +18,8 @@ export class GlobalService {
   private applicationVersion = '1.3.0';
   private testnet = false;
   private sidechain = false;
-  private mainApiPort = 37221;
-  private testApiPort = 38221;
+  private mainApiPort = 4343;
+  private testApiPort = 24343;
   private mainSideChainApiPort = 37223;
   private testSideChainApiPort = 38223;
   private apiPort: number;
@@ -58,7 +58,7 @@ export class GlobalService {
   }
 
   public get networkName() {
-    return this.sidechain ? 'cirrus' : 'stratis';
+    return this.sidechain ? 'synuit' : 'signet';
   }
 
   public setSidechainEnabled() {

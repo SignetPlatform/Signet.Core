@@ -120,7 +120,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   private loadWallet(walletLoad: WalletLoad): void {
-    this.apiService.loadStratisWallet(walletLoad)
+    this.apiService.loadSignetWallet(walletLoad)
       .subscribe(
         response => {
           this.sidechainEnabled 

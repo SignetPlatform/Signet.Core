@@ -34,7 +34,7 @@ export class TokensService {
 
   GetAvailableTokens(): Token[] {
     return [
-      new Token('CG1', 'CXa9fNVXPfYL9rdqiR22NoAc9kZUfBAUCu', 'Cirrus Giveaway'),
+      new Token('CG1', 'CXa9fNVXPfYL9rdqiR22NoAc9kZUfBAUCu', 'Synuit Giveaway'),
       ...this.defaultTokens
     ];
   }

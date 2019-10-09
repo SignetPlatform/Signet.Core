@@ -1,7 +1,7 @@
 import { AngularElectronPage } from './app.po';
 import { browser, element, by } from 'protractor';
 
-describe('stratis-core App', () => {
+describe('signet-core App', () => {
   let page: AngularElectronPage;
 
   beforeEach(() => {

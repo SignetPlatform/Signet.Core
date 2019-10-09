@@ -63,7 +63,7 @@ export class AppComponent implements OnInit, OnDestroy {
         this.statusIntervalSubscription = this.apiService.getNodeStatusInterval(true)
           .subscribe(
             response =>  {
-              const statusResponse = response.featuresData.filter(x => x.namespace === 'Stratis.Bitcoin.Base.BaseFeature');
+              const statusResponse = response.featuresData.filter(x => x.namespace === 'Signet.Bitcoin.Base.BaseFeature');
               if (statusResponse.length > 0 && statusResponse[0].state === 'Initialized') {
                 this.loading = false;
                 this.statusIntervalSubscription.unsubscribe();
@@ -80,7 +80,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   private setTitle() {
-    const applicationName = this.sidechainEnabled ? 'Cirrus Core' : 'Signet Core';
+    const applicationName = this.sidechainEnabled ? 'Synuit Core' : 'Signet Core';
     const testnetSuffix = this.globalService.getTestnetEnabled() ? ' (testnet)' : '';
     const title = `${applicationName} ${this.globalService.getApplicationVersion()}${testnetSuffix}`;
 

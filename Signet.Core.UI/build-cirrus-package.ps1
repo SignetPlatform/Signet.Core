@@ -10,7 +10,7 @@ if ( Test-Path -Path $SignetCoreDir\Signet.Core.UI\daemon )
 }
 Set-Location $SignetCoreDir\Signet.FullNode\src
 Start-Process dotnet -ArgumentList "clean" -Wait
-Set-Location .\Stratis.CirrusD
+Set-Location .\Signet.SynuitD
 Start-Process dotnet -ArgumentList "publish -r osx-x64 -o $SignetCoreDir\Signet.Core.UI\daemon" -Wait
 Set-Location $SignetCoreDir\Signet.Core.UI
 (Get-Content .\main.ts).Replace("const buildForSidechain = false;","const buildForSidechain = true;") | Set-Content .\main.ts

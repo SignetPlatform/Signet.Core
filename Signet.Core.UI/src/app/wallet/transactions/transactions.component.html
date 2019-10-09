@@ -25,7 +25,7 @@
       <pagination-controls *ngIf="enablePagination" (pageChange)="pageNumber = $event"></pagination-controls>
       <div *ngIf="enableShowHistoryButton" class="text-center my-2">
         <button type="button" class="btn btn-outline-primary"
-                [class.btn-outline-stratis-green]="globalService.getSidechainEnabled()" (click)="goToHistory()">
+                [class.btn-outline-signet-green]="globalService.getSidechainEnabled()" (click)="goToHistory()">
           Go to History
         </button>
       </div>

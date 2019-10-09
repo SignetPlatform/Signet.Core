@@ -66,7 +66,7 @@ export class SendComponent implements OnInit, OnDestroy {
   public firstTitle: string;
   public secondTitle: string;
 
-  // The opReturnAmount is for compatibility with StratisX, opReturnAmount needs to be greater than 0 to pass the MemPool
+  // The opReturnAmount is for compatibility with SignetX, opReturnAmount needs to be greater than 0 to pass the MemPool
   // Validation rules.
   public opReturnAmount = 1;
   public confirmationText: string;

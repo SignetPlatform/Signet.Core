@@ -33,10 +33,10 @@
           </div>
 
           <div class="col-3">
-            <button type="button" class="btn btn-outline-stratis-green btn-block" data-toggle="modal"
+            <button type="button" class="btn btn-outline-signet-green btn-block" data-toggle="modal"
               data-target="#modalCalltx" (click)="addToken()">Add Token
             </button>
-            <button type="button" class="btn btn-stratis-green btn-block" data-toggle="modal"
+            <button type="button" class="btn btn-signet-green btn-block" data-toggle="modal"
               data-target="#modalCreatetx" (click)="issueToken()">Create Token
             </button>
           </div>
@@ -84,7 +84,7 @@
                 </td>
                 <td class="text-right col-2" scope="col">
                   <ng-container *ngIf="item.address">
-                    <button type="button" class="btn btn-sm btn-stratis-green" (click)="send(item)"><i
+                    <button type="button" class="btn btn-sm btn-signet-green" (click)="send(item)"><i
                         class="icon lnr lnr-arrow-up-circle"></i> Send
                     </button>&nbsp;
                     <button type="button" class="btn btn-sm btn-danger" (click)="delete(item)"><i

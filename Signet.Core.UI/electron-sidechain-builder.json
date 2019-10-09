@@ -1,6 +1,6 @@
 {
-  "appId": "com.signetplatform.cirrus",
-  "productName": "Cirrus Core",
+  "appId": "com.signetplatform.synuit",
+  "productName": "Synuit Core",
   "publish": null,
   "directories": {
     "output": "app-builds"
@@ -21,24 +21,24 @@
     "!tslint.json"
   ],
   "win": {
-    "icon": "dist/assets/images/cirrus/icon",
+    "icon": "dist/assets/images/synuit/icon",
     "target": [
       "nsis"
     ],
     "artifactName": "${productName}-v${version}-setup-${os}-${arch}.${ext}"
   },
   "linux": {
-    "icon": "dist/assets/images/cirrus/",
+    "icon": "dist/assets/images/synuit/",
     "target": [
       "deb",
       "tar.gz"
     ],
-    "synopsis": "Cirrus Core: Signet sidechain wallet.",
+    "synopsis": "Synuit Core: Signet sidechain wallet.",
     "category": "Utility",
     "artifactName": "${productName}-v${version}-${os}-${arch}.${ext}"
   },
   "mac": {
-    "icon": "dist/assets/images/cirrus/icon.icns",
+    "icon": "dist/assets/images/synuit/icon.icns",
     "target": [
       "dmg"
     ],
@@ -60,7 +60,7 @@
   },
   "extraResources": [
     "daemon/**/*",
-    "src/assets/images/cirrus/icon-16.png",
+    "src/assets/images/synuit/icon-16.png",
     "src/assets/images/license_en.txt"
   ]
 }

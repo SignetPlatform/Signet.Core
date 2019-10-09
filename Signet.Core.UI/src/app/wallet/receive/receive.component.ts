@@ -80,7 +80,7 @@ export class ReceiveComponent implements OnInit {
   }
 
   private setQrString(address: string) {
-    // TODO: fix this later to use the actual sidechain name instead of 'cirrus'
+    // TODO: fix this later to use the actual sidechain name instead of 'synuit'
     this.qrString = `${this.globalService.networkName}:${address}`;
   }
 

@@ -18,8 +18,8 @@ export class GlobalService {
   private applicationVersion = '1.0.0';
   private testnet = false;
   private sidechain = false;
-  private mainApiPort = 4343;
-  private testApiPort = 24343;
+  private mainApiPort = 50507;
+  private testApiPort = 60507;
   private mainSideChainApiPort = 37223;
   private testSideChainApiPort = 38223;
   private apiPort: number;

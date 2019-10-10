@@ -309,3 +309,4 @@ project.lock.json
 
 StratisCore.UI/.idea/.idea.StratisCore.UI.dir/.idea/
 Signet.Core.UI/.idea/.idea.Signet.Core.UI.dir/.idea/
+/StratisBitcoinFullNode
